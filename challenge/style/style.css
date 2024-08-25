@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root { /*Optimizacion de las variables*/
+   --color-primario: #0A3871;
+   --color-secundario: #E5E5E5;
+   --color-terciario: #495057; 
+   --color-cuarto: #D8DFE8;
+   --color-quinto: #ffffff;
+   --color-sexto: #3b3d3e;
+   --color-siete: #343A40;
+
+   --fuente-inter: "Inter", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--color-secundario);
+    color: --color-primario;
+}
+
+.header {
+    position: absolute;
+    padding: 40px 0px 0px 40px;
+}
+.header__logo__imagen {
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+}
+
+.presentacion {
+    padding: 40px 40px 0px 340px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+}
+
+.presentacion__contenido {
+    margin-top: 128px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentacion__contenido__encriptador {
+    margin: 0px;
+}
+
+.encriptador {
+    width: 100%;
+    height: 500px;
+    background-color: var(--color-secundario);
+    font-family: var(--fuente-inter);
+    font-size: 20px;
+    border: none;
+    resize: none; /* Opcional: evita que el usuario cambie el tamaño del textarea */
+    cursor: pointer;
+    color: var(--color-primario);
+    outline: none; /*Para quitar el borde al pasar el cursor */
+}
+
+::placeholder  {
+    color: var(--color-primario);
+    font-weight: 400;
+    font-family: var(--fuente-inter);
+    font-size: 36px;
+}
+
+.presentacion__alerta {
+    font-family: var(--fuente-inter);
+    font-size: 12px;
+    font-weight: 400;
+    /* padding: 351px 0px 0px 0px; */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-terciario);
+}
+
+.botones__enlaces {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15%;
+    padding-bottom: 88px;
+    padding-top: 10px;
+}
+
+.boton1 {
+    width: 40%;
+    height: 67px;
+    text-align: center;
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid var(--color-primario);
+    background-color: var(--color-primario);
+    color: var(--color-cuarto);
+}
+
+.boton2 {
+    width: 40%;
+    height: 67px;
+    text-align: center;
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid var(--color-primario);
+    background-color: var(--color-cuarto);
+    color: var(--color-primario);
+    
+}
+
+.presentacion__contenido__dos {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 780px;
+    margin-top: 0px;
+    background-color: var(--color-quinto);
+    box-shadow: 10px 24px 32px -8px var(--color-sexto);
+    border-radius: 32px;
+}
+
+.contenedor__encriptador {
+    position: absolute;
+    padding-left: 30px;
+    top: 200px;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+.contenedor__encriptador__parrafo {
+    color: var(--color-terciario);
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 540px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.contenedor__encriptador__copiar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    padding-bottom: 88px;
+}
+
+.copiar {
+    position: absolute;
+    box-sizing: border-box;
+    width: 20%;
+    height: 67px;
+    text-align: center;
+    border-radius: 24px;
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid var(--color-primario);
+    background-color: var(--color-cuarto);
+    color: var(--color-primario);
+    top: 700px;
+    left: 1295px;
+    visibility: hidden;
+}
+
+.contenedor__resultado {
+    background: transparent;
+    position: absolute;
+    bottom: 165px;
+    width: 290px;
+    height: 550px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 25px;
+    color: var(--color-primario);
+    font-size: 25px;
+    border: none;
+    resize: none;
+}
+
+.contenedor__resultado:focus{
+    outline: none;
+}
+
+/* .contenedor__resultado p{
+    
+} */
+
+footer {
+    position: absolute;
+    width: 100%;
+    font-family: var(--fuente-inter);
+    background-color: var(--color-primario);
+    margin-top: 10px;
+    padding: 5px;
+    border-top: 2px solid var(--color-primario);
+    color: var(--color-secundario);
+    text-align: center;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    /* color: var(--color-secundario); */
+}
+
+.ocultar{
+    display: none;
+}
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .presentacion {
+        padding: 100px 40px 0px 140px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .presentacion__contenido {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contenedor__encriptador__imagen{
+        display: none;
+    }
+
+    /* .presentacion__contenido{
+        margin: 68px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    } */
+
+    .presentacion__contenido {
+        margin: 68px 0px 0px 0px;
+        width: 100%;
+        height: px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones__enlaces{
+        display: flex;
+        align-items: center;
+        position: inherit;
+        gap: 15%;
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+
+    .presentacion__alerta{
+        position: inherit;
+        margin: 15px;
+    }   
+    
+    .presentacion__contenido__dos{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: 250px;
+    } 
+
+    
+    /* .contenedor__encriptador, .contenedor__encriptador__parrafo{
+        display: block;
+        align-items: flex-end;
+        justify-content: center;
+        width: 100%;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    } */
+
+    .contenedor__encriptador {
+        position: absolute;
+        padding-left: 30px;
+        top: 200px;
+        box-sizing: border-box;
+        padding-top: 50px;
+    }
+
+    .contenedor__encriptador__parrafo {
+        position: absolute;
+        color: var(--color-terciario);
+        font-family: var(--fuente-inter);
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 0px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+    /* .contenedor__encriptador__copiar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 24px;
+        padding-bottom: 88px;
+    } */
+
+    .copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .contenedor__resultado{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    } 
+
+    footer {
+        width: 150%;
+        font-family: var(--fuente-inter);
+        background-color: var(--color-primario);
+        margin-top: 50px;
+        padding: 5px;
+        border-top: 2px solid var(--color-primario);
+        color: var(--color-secundario);
+        text-align: center;
+        height: 25px;
+        font-size: 12px;
+        font-weight: 300;
+        /* color: var(--color-secundario); */
+    }
+    
+}
+
+/* @media(max-width: 720px){
+    
+    header .header__logo__imagen{
+        width: 100%;
+        background: var(--White);
+        padding: 2px;
+    }
+
+    .encriptador{
+        width:  90%;
+        font-size: 24px;
+    }
+
+    .botones__enlaces{
+        display: grid;
+        gap: 21px;
+    }
+
+    .presentacion__contenido__dos{
+        width: 90%;
+    }
+
+    .copyright{
+        font-size: 20px;
+    }
+} */

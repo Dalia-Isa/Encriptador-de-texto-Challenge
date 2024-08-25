@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!--Indice o Encabezado-->
+    <header class="header">
+        <a class="header__logo">
+            <img class="header__logo__imagen" src="assets/Logo.png" alt="Logo de la empresa">
+        </a>
+    </header>
+
+    <!--Cuerpo-->
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <form class="presentacion__contenido__encriptador">
+                <textarea class="encriptador" placeholder="Ingrese el texto aqui"></textarea>
+            </form>
+            <div class="presentacion__alerta">
+                <a class="presentacion__alerta__imagen">
+                    <img src="assets/Group.png" alt="alerta">
+                </a>
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones__enlaces">
+                <button class="boton1" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="boton2" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="presentacion__contenido__dos">
+            <div class="contenedor__encriptador">
+                <img class="contenedor__encriptador__imagen" src="assets/Muñeco.png" alt="Imagen muñeco">
+            </div>    
+            <div class="contenedor__encriptador__parrafo">
+                <h2>
+                    Ningun mensaje fue <br> encontrado
+                </h2>
+                <p>
+                    Ingrese el texto que desees encriptar o <br> desencriptar.   
+                </p>           
+            </div>
+            <div class="contenedor__encriptador__copiar">
+                <button class="copiar" type="submit" onclick="copiar()">Copiar</button>
+            </div>
+            <!-- <div class="contenedor__resultado">
+                <p class="texto__resultado"></p>
+            </div> -->
+            <textarea type="mensaje" class="contenedor__resultado" readonly></textarea>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+     <footer>
+        <p class="copyrigth">&copy; copyright 2024 - Encriptador de Texto - Desarrollado por Dalia Hernández</p>
+     </footer>
+    <script src="app.js"></script> <!--Conectar el archivo JavaScript al HTML-->
+</body>
+</html>
