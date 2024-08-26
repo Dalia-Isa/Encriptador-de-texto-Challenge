@@ -104,7 +104,6 @@ function desencriptarTexto(mensaje) {
     btnCopiar.addEventListener("click", copiar = () => {
     var contenido = document.querySelector(".contenedor__resultado").textContent;
     navigator.clipboard.writeText(contenido);
-    console.log("hola"); 
 
     let textoCopiar = resultadoTexto;
     textoCopiar.select();
