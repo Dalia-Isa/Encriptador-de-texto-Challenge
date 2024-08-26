@@ -10,3 +10,9 @@
 * Fácil de usar: Interfaz intuitiva que facilita la encriptación y desencriptación de textos.
 
 * Código abierto: Disponible para mejorar y adaptar a tus propias necesidades.
+
+<h3> Como se hizo </h3>
+
+- Se creo primero el HTL.
+- Posteriormente se creo el CSS.
+- Finalmente se hizo la conctruccion del programa en JS.
